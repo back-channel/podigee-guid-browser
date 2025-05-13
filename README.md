@@ -1,7 +1,10 @@
-# Tauri + React + Typescript
+# Podigee GUID Browser
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Minimal desktop app that helps podcasters to retrieve the GUID for an unpublished episode from 
+Podigee. 
 
-## Recommended IDE Setup
+The latest release can be downloaded [here](https://github.com/back-channel/podigee-guid-browser/releases/latest).
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+---
+
+_Currently only built for macOS (Apple Silicon). Can be built for macOS (Intel) or Windows, too._
