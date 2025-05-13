@@ -126,11 +126,19 @@ function App() {
       )}
 
       {episodes.length > 0 && (
-        <table className={"[&_td]:bg-neutral-500/10 [&_td]:px-4 [&_td]:py-1"}>
+        <table className={"[&_td,&_th]:bg-neutral-500/10 [&_td,&_th]:px-4 [&_td]:py-1"}>
+          <thead>
+            <tr>
+              <th className="text-left rounded-tl py-3">Titel</th>
+              <th className="text-left rounded-tr py-3">
+                GUID{" "}
+                <small className="font-normal text-gray-500">Anklicken zum Kopieren</small>
+              </th>
+            </tr>
+          </thead>
           <tbody>
             {episodes.map(episode => (
-              <tr key={episode.id} className={"[&:first-child>td:first-child]:rounded-tl [&:first-child>td:last-child]:rounded-tr [&:last-child>td:first-child]:rounded-bl [&:last-child>td:last-child]:rounded-br"}>
-                <td>{episode.id}</td>
+              <tr key={episode.id} className={"[&:last-child>td:first-child]:rounded-bl [&:last-child>td:last-child]:rounded-br"}>
                 <td>{episode.title} {episode.title} {episode.title}</td>
                 <td>
                   <Button
